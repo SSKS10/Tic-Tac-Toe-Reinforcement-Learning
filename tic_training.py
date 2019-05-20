@@ -138,7 +138,7 @@ if __name__ == "__main__":
                      mini=x
                a[move_index]="X"                  
                if start0==1:
-                  values[number-2*3**(9-move_index)][move_index]+=0.5*(-1*reward(a)+0.9*mini-values[number-2*3**(9-move_index)][move_index])
+                  values[number][move_index]+=0.5*(reward(a)+0.9*mini-values[number][move_index])
                print(number,move_index,values[number][move_index])
                number=number+3**(9-move_index)
             ###################              
