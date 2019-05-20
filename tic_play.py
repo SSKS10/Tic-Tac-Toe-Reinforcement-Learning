@@ -127,7 +127,7 @@ if __name__ == "__main__":
                   mini=tem1    
             a[x]="X" 
             if start0==1:
-               values[number-2*3**(9-move_index)][x]+=0.5*(-1*reward(a)+0.9*mini-values[number-2*3**(9-move_index)][x])
+               values[number][x]+=0.5*(-1*reward(a)+0.9*mini-values[number][x])
             #print(values[number][x])
             number=number+3**(9-x) 
          print_board(a)          
