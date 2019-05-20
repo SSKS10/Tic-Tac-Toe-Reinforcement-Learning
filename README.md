@@ -13,7 +13,7 @@ Q Learning
     v(s,a) = (1-alpha) * v(s,a) + alpha * (reward + gamma * max v(s',a'))
     
   b)For Player(Skilled):-
-    v(s,a) = (1-alpha) * v(s,a) + alpha * (-1 * reward + gamma * max v(s',a'))
+    v(s,a) = (1-alpha) * v(s,a) + alpha * (reward + gamma * min v(s',a'))
 
     where,
     v(s,a) is current state value
