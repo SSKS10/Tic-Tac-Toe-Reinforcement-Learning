@@ -28,13 +28,16 @@ Q Learning
      
 
 3.Playing with real environment
- Since while training some of states will not occur so that can be done by playing with real player
+  Since while training some of states will not occur so that can be done by playing with real player
  
- You can select one of the available actions from 1 to 9
+  You can select one of the available actions from 1 to 9
  
- In this project agent goes first
+  In this project agent goes first
  
- You can modified it, so that you can play first,but you have to train it again for all the states
+  You can modified it, so that you can play first,but you have to train it again for all the states
  
 4.Table Value
-This is used to track all value of every state
+  This is used to track all value of every state
+
+5.Training against min_max trainer is added
+  Min_max optimal value is already store since it was taking too much time
