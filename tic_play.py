@@ -109,6 +109,7 @@ if __name__ == "__main__":
                   maxi=x      
             a[move_index]="O"  
             start0=1
+            temporary=move_index
             values[number][move_index]+=0.5*(reward(a)+0.9*maxi-values[number][move_index])
             print(number,values[number])
             number+=2*3**(9-move_index)    
@@ -127,7 +128,7 @@ if __name__ == "__main__":
                   mini=tem1    
             a[x]="X" 
             if start0==1:
-               values[number][x]+=0.5*(-1*reward(a)+0.9*mini-values[number][x])
+               values[number-2*3**(9-temporary)][temporary]+=0.5*(-1*reward(a)+0.9*mini-values[number-2*3**(9-temporary)][temporary])
             #print(values[number][x])
             number=number+3**(9-x) 
          print_board(a)          
