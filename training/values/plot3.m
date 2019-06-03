@@ -1,0 +1,11 @@
+a=[struct2cell(load('convert.mat')){:}];
+x=2*50000:50000:5*50000;
+a=cumsum(a,2);
+m=[a(1,500,2),a(2,500,2),a(3,500,2),a(4,500,2),a(5,500,2)];
+m=cumsum(m,2);
+for i=1:5;
+m(i)=(m(i)/(i*50000))*100;
+end;
+figure 2,plot(x,m(2:5));
+xlabel('No. of games');
+ylabel('Loss percentage');
